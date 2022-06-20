@@ -49,8 +49,4 @@ addClassBtn.addEventListener("click", function(e){
     
     
 
-    function displayAverage(){
-        console.log(average);
-        var averageDisplay = document.getElementById("averageDisplay");
-        averageDisplay.textContent = average; 
-    }
+   
