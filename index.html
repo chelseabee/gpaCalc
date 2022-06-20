@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mainTitle">GPA Caluclator</h1>
+        <h2 class="subtitle">Add a new term to start</h2>
+    </div>
+    <form id="termForm" class="termForm">
+        <label>Term</label>
+        <select name="term" id ="termSeason">
+            <option value=" ">Choose A Term</option>
+            <option vlaue="fall">Fall</option>
+            <option vlaue="spring">Spring</option>
+            <option vlaue="summer">Summer</option>
+            <option vlaue="winter">Winter</option>
+        </select>
+        <label>Year</label>
+        <input type="number" class="termInput" id="termInput" min="1950" max="2022" placeholder="2022">
+        <button class="submitTerm" id="submitTerm" >Add Term</button>
+    </form>
+    <form id="classForm" class="classForm hidden">
+        <label>Class</label>
+        <input type="text" id="classNameInput" placeholder="Class Name">
+        <label>GPA</label>
+        <input type="number" id="gpaInput" min="0.0" max="5.0" placeholder = "3.5">
+        <button class="submitClass" id="submitClass" >Add Class</button>
+    </form>
+    <div id="termContainer">
+        <h2 id="termDisplay"></h2>
+        <span class="classNames" id="classes">
+            <ul id="classDisplay"></ul>
+        </span>
+        <h3 id ="averageDisplay"></h3>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
