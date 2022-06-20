@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Pacifico&family=Staatliches&display=swap');
+/* font-family: 'Pacifico', cursive;*/
+    /*font-family: 'Staatliches', cursive;*/
+    /*font-family: 'Fascinate Inline', cursive;*/
+
+body{
+    background-color: rgb(235, 225, 212);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.container{
+    justify-content: center;
+    align-items: center;
+}
+.termForm{
+    justify-content: center;
+    align-items: center;
+}
+.classForm{
+    justify-content: center;
+}
+.hidden{
+    display:none;
+}
+h1{
+    font-family: 'Staatliches', cursive;
+    font-size: 5rem;
+    text-align: center;
+    
+}
+ul{
+    
+    list-style-type: none;
+}
