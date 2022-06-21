@@ -15,6 +15,7 @@ body{
     align-items: center;
 }
 .termForm{
+    
     justify-content: center;
     align-items: center;
 }
@@ -23,6 +24,10 @@ body{
 }
 .hidden{
     display:none;
+}
+.fa-circle-plus{
+    padding-bottom:2rem;
+    font-size: 2rem;
 }
 h1{
     font-family: 'Staatliches', cursive;
