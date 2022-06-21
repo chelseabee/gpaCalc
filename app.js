@@ -9,9 +9,18 @@ var addClassBtn = document.getElementById("submitClass");
 var gpaInput = document.getElementById("gpaInput");
 gpaArray = [];
 
+newTerm();
 
-
-
+function newTerm(){
+    var circlePlus = document.getElementById("circlePlus");
+    circlePlus.addEventListener("click", function(e)
+    {
+        e.preventDefault();
+        document.getElementById('termForm').classList.toggle('hidden');
+        document.getElementById("addTermStart").classList.toggle('hidden'); 
+        
+    });
+}
 
 
 addTermBtn.addEventListener("click", function(e){
@@ -43,10 +52,11 @@ addClassBtn.addEventListener("click", function(e){
         var average = sum / (gpaArray.length);
         console.log(average);
         var averageDisplay = document.getElementById("averageDisplay");
-        averageDisplay.textContent = "Term GPA is: " + average; 
+        averageDisplay.textContent = "Term GPA is: " + roundGPA(average); 
+        console.log(roundGPA(average));
          
     }
     
-    
-
-   
+    function roundGPA(num){
+        return +(Math.round(num + "e+2") + "e-2");
+    }
