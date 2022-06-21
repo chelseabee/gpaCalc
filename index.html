@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GPA Calculator</title>
     <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/87fd070d50.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
         <h1 class="mainTitle">GPA Calculator</h1>
-        <h2 class="subtitle">Add a new term to start</h2>
+        <span id="addTermStart" class="addTermStart">
+            <h2 class="subtitle">Add a new term to start</h2>
+            <i id="circlePlus" class="fa-solid fa-circle-plus"></i>
+        </span>
     </div>
-    <form id="termForm" class="termForm">
+    <form id="termForm" class="termForm hidden">
         <label>Term</label>
         <select name="term" id ="termSeason">
             <option value=" ">Choose A Term</option>
