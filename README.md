@@ -2,6 +2,7 @@
 Simple GPA calculator
 
 This is a smalll program that lets you add a term and then classes and GPA's to that term and it will calculate the cumulative GPA for the term. 
+The GPA is rounded to the nearest 100th decimal place. 
 
 This is the initial screen:
 ![GPA CALC first screen](https://user-images.githubusercontent.com/96267228/174653643-64623649-3f0a-4429-bea4-05d971f282c6.png)
@@ -15,7 +16,6 @@ This is the final screen that shows your classes and the total GPA:
 
 **notes for future:
 - Add functionality to store multiple terms.
-- Make the average round to the nearest 100th place. 
 - Format the classes to be aligned left 
 - Add functionality to add or delete classes that have been entered
 - Add functionality to delete terms that have been created
